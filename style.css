@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+.container {
+    flex-direction: column;
+    width: 350px;
+}
+
+.mobile-product {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.desktop-product {
+    display: none;
+}
+
+
+
+.product-info {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+}
+
+
+.preview,
+.product-description,
+.price {
+    font-size: 14px;
+    color: grey;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.preview p {
+    margin-top: 0;
+}
+
+
+.product-description p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.price {
+    text-decoration: line-through;
+    margin-left: 1em;
+}
+
+
+h1 {
+    color:hsl(212, 21%, 14%);
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    margin-top: 0;
+    line-height: 1em;
+}
+
+
+.product-price {
+    margin-top:0;
+    display: flex;
+    align-items: center;
+}
+
+.disc-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+    font-family: 'Fraunces', serif;
+}
+
+
+.buy-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    background-color:hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 1.2em 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buy-btn img {
+    margin-right: 1em;
+}
+
+
+.buy-btn:hover,
+.buy-btn:focus {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+
+
+.mobile-product-img {
+    display: none;
+}
+
+
+@media (min-width: 650px) {
+    .desktop-product {
+        width: 300px;
+        height: 100%;
+        display: block;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .mobile-product {
+        display: none;
+    }
+
+    .container {
+        flex-direction: row;
+        display: flex;
+        width: 600px;
+        margin: 0 auto;
+        border: none;
+        height: auto;
+    }
+
+    .product-info {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 1em;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
