@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/nageshpk/Product-preview
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://nageshpk.github.io/Product-preview/
 
 ## My process
 
